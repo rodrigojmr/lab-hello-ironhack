@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #282c34;
+}
+
+.nav-menu {
+  height: 50px;
+  width: 50px;
+}
+
+.hero {
+  color: white;
+  background-color: #282c34;
+  padding: 150px 0 150px 100px;
+}
+
+.hero-wrapper {
+  text-align: left;
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.subtitle-wrapper {
+  max-width: 300px;
+  min-width: 200px;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 80px;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn--white {
+  background-color: white;
+  color: #282c34;
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 25px;
+}
+
+.icon-box {
+  width: 200px;
+}
+
+.icon-box__description {
+  text-align: left;
+}
+.icon-box__description h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.icon-box__description p {
+  line-height: 1.6;
+  font-weight: 300;
 }
